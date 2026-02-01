@@ -1,8 +1,8 @@
 "use strict";
 
 /* --------- TASK 1 ---------- */
-const field1 = confirm("Enter text to field1:");
-const field2 = confirm("Enter text to field2:");
+const field1 = prompt("Enter text to field1:");
+const field2 = prompt("Enter text to field2:");
 
 if (field1.length !== 0 && field2.length !== 0) alert("All fields are filled.");
 else alert("Not all fields are filled.");
@@ -19,8 +19,8 @@ else alert("The sum of the numbers is less than or equal to 10.");
 const text = "JavaScript is awesome!";
 
 if (text.toLowerCase().includes("javascript"))
-  alert("The text contains 'JavaScript'.");
-else alert("The text does not contain 'JavaScript'.");
+  console.log("The text contains 'JavaScript'.");
+else console.log("The text does not contain 'JavaScript'.");
 
 /* --------- TASK 4 ---------- */
 const number = Number(prompt("Enter a number:"));
@@ -35,5 +35,5 @@ const email = "viktor@example.com";
 const password = "securePassword123";
 
 if (userName.length >= 3 && email.includes("@") && password.length >= 6)
-  alert("All inputs are valid.");
-else alert("Some inputs are invalid.");
+  console.log("All inputs are valid.");
+else console.log("Some inputs are invalid.");
